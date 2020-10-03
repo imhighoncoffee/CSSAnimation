@@ -1,4 +1,5 @@
 # CSSAnimation
 A sample of cool CSS Animations
 
-CSSGhost - boo
+CSSGhost - boo.
+SnowEffect - man, it's cold.

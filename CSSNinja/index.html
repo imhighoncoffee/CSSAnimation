@@ -1,0 +1,91 @@
+<html>
+<body>
+<style>
+    body {
+  background: #000;
+}
+.ninja {
+  background: #f00;
+  border-radius: 50%;
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+}
+.head {
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  left: 75px;
+  position: absolute;
+  top: 75px;
+  width: 100px;
+  z-index: 1;
+}
+.face {
+  align-items: center;
+  background: #fbecd6;
+  border-radius: 20px;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  padding: 0 15px;
+  width: 45px;
+}
+.eye {
+  animation: 5s blink infinite;
+  background: #1a1a1a;
+  border-radius: 50%;
+  height: 15px;
+  width: 10px;
+}
+
+@keyframes blink {
+  0% {
+    transform: scaleY(.25);
+  }
+  10% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.body {
+  background: #1a1a1a;
+  border-radius: 75px 75px 0 0;
+  height: 100px;
+  left: 50px;
+  position: absolute;
+  top: 150px;
+  width: 150px;
+  z-index: 0;
+}
+.sword {
+  background: #1a1a1a;
+  border-radius: 5px 5px 0 0;
+  height: 50px;
+  left: 50px;
+  position: absolute;
+  top: 130px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+</style>
+<div class="ninja">
+        <div class="head">
+          <div class="face">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+          </div>
+        </div>
+        <div class="body"></div>
+        <div class="sword"></div>
+      </div>
+      </body>
+</html>
